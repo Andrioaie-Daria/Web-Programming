@@ -1,0 +1,53 @@
+html, body {
+    margin:0px;
+    height:100%;
+  }
+
+ul {
+    list-style-type: none;
+}
+
+.level0 {
+    background-color: rgb(18, 133, 127);
+    width: 250px;
+    height: 100%;
+    padding-top: 12%;
+    padding-left: 20px;
+}
+
+.level0-item {
+    padding-bottom: 50px;
+    font-size: large;
+}
+
+li {
+    font-family: "Courier New";
+    padding-top: 10px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+
+.level1 {
+    display: none;
+    position: absolute;
+    background-color: rgb(18, 133, 127);
+    margin-left: 200px;
+    width: 205px;
+}
+
+.level2 {
+    display: none;
+    background-color: rgb(18, 133, 127);
+    position: absolute;
+    margin-left: 200px;
+    width: 210px;
+}
+
+.level0 li:hover .level1 {
+    display: block;
+}
+
+.level1 li:hover .level2{
+    display: block;
+} 

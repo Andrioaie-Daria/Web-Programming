@@ -1,0 +1,42 @@
+
+body {
+    background-color: rgb(16, 69, 71);
+}
+
+#glow {
+    padding: 50px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 20px rgb(255, 145, 0);
+    font-size: 50px;  
+}
+
+#shadow {
+    text-align: center;
+    padding: 50px;
+    color: white;
+    text-shadow: 17px 12px 10px rgb(0, 0, 0);
+    font-size: 50px;  
+}
+
+#fire{
+    text-align: center;
+    padding: 50px;
+    color: #ffffff;
+    text-shadow:  0px -4px 12px #FF3, 
+                0px -15px 24px rgb(247, 132, 0), 
+                0px -25px 48px rgb(197, 4, 4);
+                
+    font-size: 50px;    
+}
+
+#underline {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 50px;
+    width: 150ch;  
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/ 10ch 2px repeat-x;
+    font: 1.2rem 'Ubuntu Mono', monospace;
+    letter-spacing: 0.5ch;
+}
