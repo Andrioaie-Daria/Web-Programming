@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Buttons and links</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <button id="bcg_button" type="button" class="btn btn-primary"> Change backgrounds </button>
+        <button id="links_button" type="button" class="btn btn-info">Change links</button>
+        <nav>
+            <a href="https://www.facebook.com/">These</a>
+            <a href="https://www.youtube.com/">are</a>
+            <a href="https://stackoverflow.com/">several</a>
+            <a href="https://www.zara.com/ro/">links</a>
+            <a href="https://www.primulmilion.com/a/2147490482/5jCaxzCW">that</a>
+            <a href="https://www.google.com/" >point</a>
+            <a href="http://www.cs.ubbcluj.ro/">to</a>
+            <a href="https://www.instagram.com/">random</a>
+            <a href="https://biotifulbrands.com/">sites</a>
+            <a href="https://www.mihaelabrailescu.ro/">!</a>
+        </nav>
+        
+        <script>
+            backgrounds = ["2.jpg", "3.jpg", "4.jpg", "5.jpg", "1.jpg"]
+            linkStyles = ["style1", "style2", "style3"];
+            bcgButton = document.querySelector("#bcg_button");
+            linksButton = document.querySelector("#links_button");
+
+            bcgButton.addEventListener('click', (event) => {
+                let nextBackground = backgrounds.shift();
+                backgrounds.push(nextBackground);
+                document.body.style.backgroundImage = "url(" + nextBackground + ")";
+            });
+
+            linksButton.addEventListener('click', (event) => {
+                let nextStyle = linkStyles.shift();
+                linkStyles.push(nextStyle);
+                let links = document.getElementsByTagName("a");
+                for(const link of links){
+                    link.className = nextStyle
+                }
+            });
+        </script>
+    </body>
+</html>
