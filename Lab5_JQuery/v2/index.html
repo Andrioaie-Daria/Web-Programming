@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sliding desktops</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="desktop1" class="slide">
+            <h1>This is desktop 1.</h1>
+        </div>
+        <div id="desktop2" class="slide">
+            <h1>This is desktop 2.</h1>
+        </div>
+        <div id="desktop3" class="slide">
+            <h1>This is desktop 3.</h1>
+        </div>
+        <div id="desktop4" class="slide">
+            <h1>This is desktop 4.</h1>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#desktop1").click(function(){
+                $("#desktop2").slideDown("slow", function(){
+                    $("#desktop1").hide();
+                });
+            })
+            $("#desktop2").click(function(){
+                $("#desktop3").slideDown("slow", function(){
+                    $("#desktop2").hide();
+                });
+            })
+            $("#desktop3").click(function(){
+                $("#desktop4").slideDown("slow", function(){
+                    $("#desktop3").hide();
+                });
+            })
+            $("#desktop4").click(function(){
+                $("#desktop1").slideDown("slow", function(){
+                    $("#desktop4").hide();
+                });
+                
+            })
+        })
+    </script>
+</html>

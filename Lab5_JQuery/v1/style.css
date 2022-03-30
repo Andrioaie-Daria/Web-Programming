@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#desktop1 {
+    height: 1000px;
+    background-color: rgb(236, 255, 112);
+}
+
+#desktop2 {
+    height: 1000px;
+    background-color: rgb(255, 149, 246);
+    display: none;
+}
+
+#desktop3 {
+    display: none;
+    height: 1000px;
+    background-color: rgb(0, 195, 255);
+}
+
+#desktop4 {
+    display: none;
+    height: 1000px;
+    background-color: rgb(0, 255, 106);
+}
